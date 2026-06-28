@@ -1,46 +1,37 @@
-# Starter Project Guidance
+# Google Office
 
-Ini adalah starter project submission untuk kelas Belajar Membuat Aplikasi Flutter untuk Pemula.
+Aplikasi Flutter sederhana yang menampilkan daftar kantor Google di berbagai negara. Proyek ini dibuat sebagai latihan pada kelas Belajar Membuat Aplikasi Flutter untuk Pemula di Dicoding untuk memahami konsep dasar pengembangan aplikasi menggunakan Flutter.
 
-Untuk menyelesaikan kelas ini, Anda perlu mengerjakan Submission sebagai bentuk evaluasi pemahaman Anda. Submission ini terdiri dari 3 kriteria yang harus Anda selesaikan.
+## Fitur
 
-- Kritaria 1: Membuat Halaman Daftar Kantor Google
-- Kriteria 2: Membuat Halaman Detail Kantor Google
-- Kriteria 3: Menerapkan Navigasi & Pengiriman Data
+- Menampilkan daftar kantor Google pada halaman utama.
+- Menampilkan informasi detail setiap kantor.
+- Navigasi dari halaman utama ke halaman detail.
 
-Ada pun informasi penting yang berguna ketika mengerjakan submission ini.
+## Konsep yang Dipelajari
 
-1. Anda tidak perlu mengubah susunan folder yang ada di starter project ini.
-2. Untuk menyelesaikan submisison ini, Anda cukup mengubah kode yang ada di berkas [home_page.dart](lib/view/home_page.dart) dan [detail_page.dart](lib/view/detail_page.dart). Fokuslah pada kode yang sudah ditandai sebagai `TODO`.
-3. Ketika sedang mengembangkan fitur halaman detail, Anda tidak perlu mengubah  properties `googleOffice` dan `googleOfficeId` serta constructor `DetailPage`. Ini menjadi tantangan Anda untuk menyelesaikan submission kelas.
+- Stateless Widget & Stateful Widget
+- ListView.builder
+- Custom Widget
+- Navigation menggunakan Navigator.push()
+- Pengelolaan aset (images)
+- Layouting dengan Column, Row, Container, dan Padding
 
-    ```dart
-    class DetailPage extends StatelessWidget {
-        // tidak perlu mengubah properties ini.
-        final GoogleOffice googleOffice;
-        final String? googleOfficeId;
+## Cara menjalankan Proyek
 
-        DetailPage({super.key, GoogleOffice? googleOffice, this.googleOfficeId})
-            : ...;
-
-        ...
-    }
-    ```
-
-    Namun, kamu boleh mengubah [initializer list](https://dart.dev/language/constructors#use-an-initializer-list) kelas `DetailPage` agar mendapatkan *grading* tinggi sesuai kriteria.
-
-    ```dart
-    class DetailPage extends StatelessWidget {
-        ...
-
-        DetailPage({...})
-            // silakan edit initializer list ini agar dapat nilai tinggi.
-            : googleOffice = googleOffice ?? listOfGoogleOffice.first;
-
-        ...
-    }
-    ```
-
-    > **Catatan:**
-    >
-    > Kode `googleOffice = googleOffice ?? listOfGoogleOffice.first;` di atas hanyalah **contoh** implementasi dan **bukanlah solusi yang tepat** untuk lulus dari semua *grading* kriteria.
+1. Clone Repository
+```bash
+git clone https://github.com/username/google-office-submission.git
+```
+2. Masuk ke Folder Proyek
+```bash
+cd google-office-submission 
+```
+3. Install Dependencies
+```bash
+flutter pub get
+```
+4. Jalankan Aplikasi
+```bash
+flutter run
+```
