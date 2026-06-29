@@ -17,7 +17,7 @@ class DetailPage extends StatelessWidget {
         title: const Text('DetailPage'),
       ),
       // TODO 2: change the widget below and add the selected Google office details
-      body: const Center(child: Text('This is a text.')),
+      body:  Center(child: Text('$googleOfficeId')),
     );
   }
 }

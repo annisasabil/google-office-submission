@@ -20,6 +20,7 @@ Aplikasi Flutter sederhana yang menampilkan daftar kantor Google di berbagai neg
 ## Cara menjalankan Proyek
 
 1. Clone Repository
+
 ```bash
 git clone https://github.com/username/google-office-submission.git
 ```
@@ -35,3 +36,11 @@ flutter pub get
 ```bash
 flutter run
 ```
+
+git clone https://github.com/username/google-office-submission.git
+2. Masuk ke Folder Proyek
+cd google-office-submission 
+3. Install Dependencies
+flutter pub get
+4. Jalankan Aplikasi
+flutter run
