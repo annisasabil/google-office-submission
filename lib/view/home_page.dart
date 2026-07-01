@@ -159,11 +159,11 @@ class GoogleOfficeCard extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 16),
             child: ListTile(
-              leading: Icon(Icons.location_on_outlined, color: Colors.deepPurple.shade700,),
+              leading: Icon(Icons.location_on_outlined, color: Colors.deepPurple.shade700),
               title: Text(googleOffice.address, 
                 style: TextStyle(
                   fontSize: 14,
-                  fontWeight: FontWeight.w300,
+                  fontWeight: FontWeight.w400,
                   letterSpacing: 1,
                 ),
               ),
